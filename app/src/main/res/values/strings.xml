@@ -3,4 +3,5 @@
     <string name="choosemap">Choose Map Style</string>
     <string name="regularview">Regular Map</string>
     <string name="hikebikemapview">Hike/Bike Map</string>
+    <string name="preferences">Preferences</string>
 </resources>
