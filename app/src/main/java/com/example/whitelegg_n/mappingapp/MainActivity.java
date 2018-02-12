@@ -39,15 +39,20 @@ public class MainActivity extends AppCompatActivity {
     public void onStart()
     {
         super.onStart();
-         new AlertDialog.Builder(this).setPositiveButton("OK", null).
-                 setMessage("onStart()").show();
+        // import android.app.AlertDialog
+        new AlertDialog.Builder(this).
+                setPositiveButton("OK", null).
+                setMessage("onStart() called").show();
     }
+
 
     public void onStop()
     {
         super.onStop();
-        Toast.makeText(this, "onStop()", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "onStop() called", Toast.LENGTH_LONG).show();
     }
+
+
 
     public boolean onCreateOptionsMenu (Menu menu)
     {
@@ -66,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (item.getItemId() == R.id.preferences)
         {
-            Intent intent = new Intent (this,PreferencesActivity.class);
+            Intent intent = new Intent (this, PrefsActivity.class);
             startActivityForResult(intent, 2);
             return true;
         }
